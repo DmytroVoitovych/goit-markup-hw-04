@@ -1,0 +1,260 @@
+/* создаем палитру цветов */
+/* цвет фона #FFFFFF */
+/* основной цвет #212121 */
+/* второй цвет  #757575 */
+/* цвет акцента  color: #2196F3;*/
+
+:root {
+  --akcent-color: #2196f3;
+  --second-color: #757575;
+  --background: #f5f4fa;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+}
+
+/*оформляем шапку  */
+/* логотип */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
+}
+
+.container-h {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.logo span {
+  color: var(--akcent-color);
+}
+
+.logo:hover,
+.logo:focus {
+  text-decoration: underline var(--akcent-color);
+}
+
+.pf-list {
+  display: flex;
+  margin-left: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.pf-list .list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
+  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.link.current {
+  color: var(--akcent-color);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--akcent-color);
+}
+
+.kontakt {
+  text-decoration: none;
+  color: var(--second-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-flex {
+  display: flex;
+  margin-left: auto;
+}
+.nav-flex .kontakt:not(:last-child) {
+  margin-right: 50px;
+}
+
+.kontakt:hover,
+.kontakt:focus {
+  color: var(--akcent-color);
+}
+/* начинаю оформление кнопок */
+.portfolio {
+  /* margin-top: 94px; - спорный момент */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.frame {
+}
+.filter {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.filter .list-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:hover {
+  color: #ffffff;
+  background-color: var(--akcent-color);
+}
+/* начинаю делать секцию с проэктами */
+.list-project {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -15px; - древний способ */
+  margin: 0;
+  padding: 0;
+}
+
+.list-project .item {
+  width: 370px;
+  border: 1px solid #eeeeee;
+  /* margin: 15px; - древний способ */
+  margin-right: 30px;
+}
+.list-project .item:nth-last-child(-n + 6) {
+  margin-top: 30px;
+}
+.list-project .item:nth-child(3n) {
+  margin-right: 0;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.title:hover {
+  color: var(--akcent-color);
+  cursor: default;
+}
+
+.desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+.desc-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+/*начинаю работу над футером */
+.address {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.info {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+.info:first-child {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+.logo-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-footer span {
+  color: var(--akcent-color);
+}
