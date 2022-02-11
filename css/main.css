@@ -20,6 +20,9 @@ body {
   color: #212121;
   font-family: Roboto, sans-serif;
 }
+img {
+  display: block;
+}
 
 /*оформляем шапку  */
 /* логотип */
@@ -104,6 +107,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.kontakt::after {
+  content: "";
+  background-image: url(../svg/envelope.svg);
+}
 .nav-flex {
   display: flex;
   margin-left: auto;
@@ -131,8 +138,8 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/team-dream.jpg);
-  background-size: contain;
-  position: initial;
+  background-size: auto;
+  background-repeat: no-repeat;
   text-align: center;
 }
 .title-hero {
@@ -197,6 +204,48 @@ body {
 .featurs-list .item:not(:last-child) {
   margin-right: 30px;
 }
+.item::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  /* margin-right: 30px; */
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.item:nth-child(1)::before {
+  display: block;
+  background-image: url(../images/anten.svg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+}
+
+.item:nth-child(2)::before {
+  display: block;
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+}
+
+.item:nth-child(3)::before {
+  display: block;
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+}
+
+.item:nth-child(4)::before {
+  display: block;
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+}
+
 /* начинаю оформлять секцию о занятиях компании */
 .title-section {
   font-weight: 700;

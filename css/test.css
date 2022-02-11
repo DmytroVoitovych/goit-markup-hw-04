@@ -1,0 +1,46 @@
+.item:nth-child(1)::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  /* margin-right: 30px; */
+  background-image: url(../images/antena.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item:nth-child(2)::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  /* margin-right: 30px; */
+  background-image: url(../images/time.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item:nth-child(3)::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-image: url(../images/diagrama.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item:nth-child(4)::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  /* margin-right: 30px; */
+  background-image: url(../images/kosmonavt.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
