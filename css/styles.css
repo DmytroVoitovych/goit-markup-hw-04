@@ -25,6 +25,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+}
+
 /*оформляем шапку  */
 /* логотип */
 .header {
@@ -180,10 +184,19 @@ body {
 
 .list-project .item {
   width: 370px;
-  border: 1px solid #eeeeee;
+
   /* margin: 15px; - древний способ */
   margin-right: 30px;
+
+  background-color: #ffffff;
 }
+
+.list-project .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .list-project .item:nth-last-child(-n + 6) {
   margin-top: 30px;
 }
@@ -199,10 +212,10 @@ body {
   letter-spacing: 0.06em;
 }
 
-.title:hover {
+/* .title:hover {
   color: var(--akcent-color);
   cursor: default;
-}
+} */
 
 .desc {
   margin-top: 0;
@@ -216,6 +229,9 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 /*начинаю работу над футером */
 .address {

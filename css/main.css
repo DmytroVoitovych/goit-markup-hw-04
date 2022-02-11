@@ -106,10 +106,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
-.kontakt::after {
-  content: "";
-  background-image: url(../svg/envelope.svg);
+.kontakt-icon {
+  margin-right: 10px;
+}
+.kontakt-icon {
+  fill: currentColor;
 }
 .nav-flex {
   display: flex;
@@ -122,6 +126,7 @@ img {
 .kontakt:hover,
 .kontakt:focus {
   color: var(--akcent-color);
+  fill: var(--akcent-color);
 }
 /* начинаю работу над оформлением героя */
 .hero {
@@ -216,7 +221,7 @@ img {
 }
 .item:nth-child(1)::before {
   display: block;
-  background-image: url(../images/anten.svg);
+  background-image: url(../images/../images/anten.svg);
   background-repeat: no-repeat;
   /* background-size: contain; */
   background-position: center;
@@ -311,7 +316,29 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/* Начинаю оформлять внутрению секцию постоянных клиентов */
+.client-often {
+  /* background: var(--white-color); */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.title-client {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.list-client {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
 /*начинаю работу над футером */
 .address {
   font-size: 14px;
