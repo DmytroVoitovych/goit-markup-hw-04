@@ -332,12 +332,40 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+/* секция постоянных клиентов */
 .list-client {
   display: flex;
   margin: 0;
   padding: 0;
   justify-content: space-between;
+}
+
+.icon-client {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+  list-style: none;
+  /* width: 170px;
+  height: 92px; */
+}
+
+.icon-client a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+.icon-client a:hover {
+  fill: var(--akcent-color);
+  stroke: transparent;
+  border: 1px solid var(--akcent-color);
 }
 /*начинаю работу над футером */
 .address {
