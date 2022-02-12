@@ -59,10 +59,10 @@ img {
   color: var(--akcent-color);
 }
 
-.logo:hover,
+/* .logo:hover,
 .logo:focus {
   text-decoration: underline var(--akcent-color);
-}
+} */
 
 .pf-list {
   display: flex;
@@ -416,9 +416,12 @@ img {
   border: 1px solid var(--akcent-color);
 }
 /*начинаю работу над футером */
-.address {
-  max-width: 231px;
+.otstup {
   margin-right: 70px;
+}
+.address {
+  /* max-width: 231px;
+  margin-right: 70px; */
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -532,6 +535,7 @@ img {
   background-color: var(--akcent-color);
 } */
 
-.link-icon:hover {
+.link-icon:hover,
+.link-icon:focus {
   background-color: var(--akcent-color);
 }

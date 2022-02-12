@@ -69,10 +69,10 @@ img {
   color: var(--akcent-color);
 }
 
-.logo:hover,
+/* .logo:hover,
 .logo:focus {
   text-decoration: underline var(--akcent-color);
-}
+} */
 
 .pf-list {
   display: flex;
@@ -116,6 +116,14 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+.kontakt-icon {
+  margin-right: 10px;
+}
+.kontakt-icon {
+  fill: currentColor;
 }
 .nav-flex {
   display: flex;
@@ -128,7 +136,9 @@ img {
 .kontakt:hover,
 .kontakt:focus {
   color: var(--akcent-color);
+  fill: var(--akcent-color);
 }
+
 /* начинаю оформление кнопок */
 .portfolio {
   /* margin-top: 94px; - спорный момент */
@@ -168,9 +178,11 @@ img {
 }
 
 .button:hover,
-.button:hover {
+.button:focus {
   color: #ffffff;
   background-color: var(--akcent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* начинаю делать секцию с проэктами */
 .list-project {
@@ -234,7 +246,12 @@ img {
   border-right: 1px solid #eeeeee;
 }
 /*начинаю работу над футером */
+.otstup {
+  margin-right: 70px;
+}
 .address {
+  /* max-width: 231px;
+  margin-right: 70px; */
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -243,7 +260,12 @@ img {
   margin-top: 20px;
   margin-bottom: 9px;
 }
-
+.address-kontakt {
+  display: inline;
+}
+.info {
+  display: inline-flex;
+}
 .footer {
   background: #2f303a;
   padding-top: 60px;
@@ -277,4 +299,73 @@ img {
 
 .logo-footer span {
   color: var(--akcent-color);
+}
+
+/* начинаю делать ссылки на соц-сети */
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+.right-flex {
+  display: flex;
+}
+
+.push-net {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-link {
+  display: flex;
+  list-style: none;
+  /* width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);*/
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  fill: var(--white-color);
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-svg {
+  fill: #ffffff;
+}
+
+/* .footer-link:hover {
+  background-color: var(--akcent-color);
+} */
+
+.link-icon:hover,
+.link-icon:focus {
+  background-color: var(--akcent-color);
 }
