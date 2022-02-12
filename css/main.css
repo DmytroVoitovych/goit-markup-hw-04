@@ -314,11 +314,55 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin: 0;
+  margin-bottom: 16px;
   text-align: center;
 }
 .li-team .disc {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/* начинаю офрмлять иконки в карточке */
+.team-link {
+  display: flex;
+  list-style: none;
+  /* width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1); */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.link-icon-team {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.team-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.team-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .link-svg-team {
+  fill: #afb1b8;
+} */
+
+.link-icon-team:hover {
+  background-color: var(--akcent-color);
+  fill: var(--white-color);
+  stroke: transparent;
 }
 /* Начинаю оформлять внутрению секцию постоянных клиентов */
 .client-often {
@@ -451,15 +495,23 @@ img {
 .footer-link {
   display: flex;
   list-style: none;
+  /* width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);*/
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link-icon {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-}
-.link-svg {
 }
 
 .footer-list {
@@ -476,6 +528,10 @@ img {
   fill: var(--white-color);
 }
 
-.footer-link:hover {
+/* .footer-link:hover {
+  background-color: var(--akcent-color);
+} */
+
+.link-icon:hover {
   background-color: var(--akcent-color);
 }
