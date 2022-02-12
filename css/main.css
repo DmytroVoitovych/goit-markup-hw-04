@@ -171,6 +171,10 @@ img {
   cursor: pointer;
   padding: 10px 32px;
 }
+
+.button-hero:hover {
+  background-color: #188ce8;
+}
 /* начинаю работу над списком особенностей компании  */
 
 .featurs-title {
@@ -369,6 +373,8 @@ img {
 }
 /*начинаю работу над футером */
 .address {
+  max-width: 231px;
+  margin-right: 70px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -376,6 +382,12 @@ img {
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 9px;
+}
+.address-kontakt {
+  display: inline;
+}
+.info {
+  display: inline-flex;
 }
 
 .footer {
@@ -412,4 +424,58 @@ img {
 
 .logo-footer span {
   color: var(--akcent-color);
+}
+/* начинаю делать ссылки на соц-сети */
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+.right-flex {
+  display: flex;
+}
+
+.push-net {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-link {
+  display: flex;
+  list-style: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.link-svg {
+}
+
+.footer-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-svg {
+  fill: var(--white-color);
+}
+
+.footer-link:hover {
+  background-color: var(--akcent-color);
 }
