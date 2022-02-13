@@ -185,25 +185,34 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* начинаю делать секцию с проэктами */
+.link-projekt {
+  text-decoration: none;
+  color: inherit;
+}
+
 .list-project {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   /* margin: -15px; - древний способ */
+  /* margin: -15px -15px; */
   margin: 0;
+
   padding: 0;
 }
+/* олдскул */
+/* .list-project .item {
+  margin: 15px 15px;
+} */
 
 .list-project .item {
   width: 370px;
-
   /* margin: 15px; - древний способ */
   margin-right: 30px;
-
   background-color: #ffffff;
 }
-
-.list-project .item:hover {
+.list-project .item:hover,
+.list-project .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
