@@ -197,12 +197,21 @@ img {
   /* margin: -15px; - древний способ */
   /* margin: -15px -15px; */
   margin: 0;
-
+  /* адаптивный метод  */
+  /* margin-right: -30px;
+  margin-top: -30px; */
   padding: 0;
 }
 /* олдскул */
 /* .list-project .item {
   margin: 15px 15px;
+} */
+
+/* чере функци calc адаптивный способ */
+/* .list-project .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 } */
 
 .list-project .item {
